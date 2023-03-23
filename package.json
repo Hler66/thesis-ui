@@ -1,0 +1,51 @@
+{
+  "name": "thesis-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "docs:dev": "vitepress dev docs --port 8080 --temp .temp",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs --port 8080",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint --fix --ext .ts,.vue src",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.21.3",
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@types/node": "^18.15.5",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "@vitejs/plugin-vue": "4.1.0",
+    "@vitejs/plugin-vue-jsx": "3.0.1",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "@vue/test-utils": "^2.3.2",
+    "eslint": "^8.36.0",
+    "eslint-formatter-pretty": "^5.0.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "happy-dom": "^8.9.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.6",
+    "terser": "^5.16.6",
+    "vite": "4.2.1",
+    "vitepress": "1.0.0-alpha.61",
+    "vitepress-theme-demoblock": "2.0.2",
+    "vitest": "^0.29.7"
+  },
+  "dependencies": {
+    "@iconify-json/ic": "1.0.8",
+    "unocss": "0.50.6",
+    "vue": "3.2.47"
+  }
+}
