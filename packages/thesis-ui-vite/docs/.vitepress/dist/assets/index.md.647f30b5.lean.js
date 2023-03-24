@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as s,N as t}from"./chunks/framework.97e1ae68.js";const b=JSON.parse('{"title":"🔨 Thesis-UI 是什么？","description":"","frontmatter":{},"headers":[],"relativePath":"index.md"}'),i={name:"index.md"},o=t("",10),n=[o];function r(l,c,h,p,d,u){return s(),e("div",null,n)}const m=a(i,[["render",r]]);export{b as __pageData,m as default};
