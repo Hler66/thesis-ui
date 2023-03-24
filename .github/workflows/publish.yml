@@ -32,8 +32,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: pnpm build
-      - run: pnpm test
+      - name: Install modules
+        run: pnpm install
+      - name: Run Vuild
+        run: pnpm build
+      - name: Run Test
+        run: pnpm test
 
   publish-npm:
     needs: build
