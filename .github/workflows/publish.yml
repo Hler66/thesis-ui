@@ -24,7 +24,7 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Run Test
-        run: packages/smarty-ui-vite && pnpm run test:run
+        run: cd packages/smarty-ui-vite && pnpm run test:run
   build:
     runs-on: ubuntu-latest
     steps:
@@ -35,6 +35,6 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Run Vuild
-        run: packages/smarty-ui-vite && pnpm run build
+        run: cd packages/smarty-ui-vite && pnpm run build
       - name: Run Test
-        run: packages/smarty-ui-vite && pnpm run test
+        run: cd packages/smarty-ui-vite && pnpm run test
