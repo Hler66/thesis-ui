@@ -24,17 +24,17 @@ jobs:
       - name: Install modules
         run: pnpm install
       - name: Run Test
-        run: pnpm run test:run
+        run: packages/smarty-ui-vite && pnpm run test:run
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v2.1.0
         with:
           node-version: 16
       - name: Install modules
-        run: npm install
+        run: pnpm install
       - name: Run Vuild
-        run: npm run build
+        run: packages/smarty-ui-vite && pnpm run build
       - name: Run Test
-        run: npm run test
+        run: packages/smarty-ui-vite && pnpm run test
