@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "module": "./dist/thesis-ui.es.js",
+  "homepage": "https://thesis-ui-thesis-ui-vite.vercel.app/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
