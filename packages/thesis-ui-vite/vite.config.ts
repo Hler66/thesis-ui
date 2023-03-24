@@ -2,7 +2,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
-import Unocss from "./config/unocss";
+import Unocss from "../../config/unocss";
 
 // 底层的rullup配置
 const rollupOptions = {
