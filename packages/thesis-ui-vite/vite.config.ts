@@ -42,5 +42,9 @@ export default defineConfig({
     transformMode: {
       web: [/.[tj]sx$/],
     },
+    coverage: {
+      provider: "istanbul",
+      reporter: ["text", "json", "html"],
+    },
   },
 });
